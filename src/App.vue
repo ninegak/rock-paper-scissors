@@ -47,8 +47,8 @@ export default {
       const leftIndex = Math.floor(Math.random() * this.choices.length);
       const rightIndex = Math.floor(Math.random() * this.choices.length);
 
-      this.leftChoice = `src/assets/${this.choices[leftIndex]}.jpg`;
-      this.rightChoice = `src/assets/${this.choices[rightIndex]}.jpg`;
+      this.leftChoice = `./src/assets/${this.choices[leftIndex]}.jpg`;
+      this.rightChoice = `./src/assets/${this.choices[rightIndex]}.jpg`;
       console.log(leftIndex)
       if (leftIndex === rightIndex) {
         this.result = "It's a tie!";
